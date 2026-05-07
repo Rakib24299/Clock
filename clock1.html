@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <link rel="stylesheet" href="clock1.css">
+</head>
+<body>
+
+<div class="container">
+
+<div class="blur-box">
+  <!-- Analog Clock -->
+  <div class="clock" id="analogClock">
+    <canvas id="analogCanvas" width="300" height="300"></canvas>
+  </div>
+
+  <!-- Digital Clock -->
+  <div class="digital hidden" id="digitalClock">
+    <div class="time-row">
+      <span id="timeDisplay"><span id="hoursMinutes">00:00</span><span id="seconds">:00</span></span>
+      <span id="ampmDisplay"></span>
+    </div>
+    <span id="dateDisplay"></span>
+    <span id="tempDisplay">35°C</span>
+    <button id="ampmBtn" class="small-btn" onclick="toggleAmPm()">12H</button>
+  </div>
+</div>
+
+</div>
+
+<div class="buttons">
+  <button class="action-btn" id="nightBtn" onclick="toggleMode()">🌙 Night</button>
+  <button class="action-btn" id="digitalBtn" onclick="toggleClock()">📱 Digital</button>
+  <button class="action-btn" id="calendarBtn" onclick="toggleCalendar()">📅 Calendar</button>
+</div>
+
+<!-- Calendar Modal -->
+<div id="calendarModal" class="cal-overlay hidden">
+  <div class="cal-box">
+    <div class="cal-header">
+      <button onclick="changeMonth(-1)">&#8249;</button>
+      <span id="calTitle"></span>
+      <button onclick="changeMonth(1)">&#8250;</button>
+      <button class="cal-close" onclick="toggleCalendar()">✕</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+</div>
+
+<script src="clock1.js"></script>
+</body>
+</html>
