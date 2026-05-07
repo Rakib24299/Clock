@@ -1,5 +1,5 @@
 open in visual Code 
 
-select the clockq.html file 
+select the index.html file 
 
 boom then go to live server from VS code
