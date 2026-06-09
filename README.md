@@ -1,3 +1,4 @@
+download the zip file
 open in visual Code 
 
 select the index.html file 
