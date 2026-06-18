@@ -1,4 +1,4 @@
-download the zip file
+Download the zip file
 
 open in visual Code 
 
